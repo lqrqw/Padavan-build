@@ -1,5 +1,5 @@
 #修改TNAME: K2P-5.0 中的K2P-5.0为你需编译的型号，注意名称要与configs/templates/目录下的名字相同
-name: Build Padavan
+name: Build k2p_Padavan
 
 on: 
   release:
@@ -9,6 +9,7 @@ on:
     - 'v*'
   #  branches: 
   #    - master
+  workflow_dispatch:
   schedule:
    - cron: 0 8 * * 5
   watch:
